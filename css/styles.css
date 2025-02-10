@@ -1,0 +1,122 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #00aaff;
+    --primary-dark: #0088cc;
+    --background-color: #121212;
+    --text-color-light: #e0e0e0;
+    --text-color-dark: #333;
+    --navbar-bg: #1e1e1e;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color-light);
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    background-color: var(--navbar-bg);
+}
+
+.navbar-brand img {
+    height: 100px;
+}
+
+.card-title, .card-text {
+    color: var(--text-color-dark);
+}
+
+.navbar-brand, .nav-link {
+    color: var(--text-color-light) !important;
+}
+
+.foto-perfil, .foto-moto {
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.foto-perfil {
+    height: 300px;
+    width: 200px;
+}
+
+.foto-moto {
+    height: 400px;
+    width: 600px;
+}
+
+.navbar-nav .nav-link {
+    padding: 10px 15px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--text-color-light) !important;
+    background-color: var(--primary-dark) !important;
+    text-shadow: 0 0 5px var(--text-color-light);
+}
+
+p {
+    color: var(--text-color-light);
+    text-align: justify;
+    letter-spacing: 0.5px;
+}
+
+.carousel-inner img {
+    border-radius: 15px;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-dark);
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+    border-color: #006699;
+}
+
+footer {
+    background-color: var(--navbar-bg);
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer div {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+
+footer .fab {
+    color: var(--text-color-light);
+    transition: color 0.3s ease-in-out;
+}
+
+footer .fab:hover {
+    color: var(--primary-color);
+}

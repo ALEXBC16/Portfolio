@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Alejandro López Pedreira</title>
+    <link rel="icon" href="../media/img/ALP_blanco.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="../media/img/ALP_blanco.png" alt="Logo Alejandro López Pedreira"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="about.html">Sobre mi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../media/pdf/Alejandro%20López%20Pedreira%20CV%20foto.pdf">Descargar CV</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Sobre Mí -->
+    <section class="container" id="about">
+        <div class="row align-items-center">
+            <h1>¿Quién soy?</h1>
+            <div class="d-flex justify-content-between gap-5">
+                <div class="col-md-8">
+                    <p>
+                        Desarrollador de aplicaciones tanto web como multiplataforma con ganas de seguir 
+                        aprendiendo del mundillo del desarrollo, pero no por ello cerrado a aprender otros ámbitos.
+                    </p>
+                    <p class="mb-1">
+                        <i class="fas fa-map-marker-alt me-2"></i>A Coruña
+                    </p>
+                    <div>
+                        <a href="https://www.linkedin.com/in/alejandro-lópez-pedreira-19a28127a/" target="_blank" class="text-decoration-none me-3">
+                            <i class="fab fa-linkedin fa-lg"></i>
+                        </a>
+                        <a href="https://github.com/ALEXBC16" target="_blank" class="text-decoration-none">
+                            <i class="fab fa-github fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 text-end foto-container">
+                    <img class="foto-perfil" src="../media/img/Foto_carnet.jpg" alt="Foto de perfil">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section class="container py-5" id="projects">
+        <h2 class="text-center mb-4">Proyectos Personales</h2>
+        <div id="proyectosCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Proyecto 1 -->
+                <div class="carousel-item active">
+                    <a href="https://github.com/ALEXBC16/TFC-Desarrollo-de-Aplicaciones-Multiplataforma" target="_blank" class="text-decoration-none">
+                        <div class="card mx-auto slider-box" style="max-width: 40rem;">
+                            <div class="row g-0 h-100">
+                                <div class="col-12 col-md-6 h-100">
+                                    <img src="../media/img/Logo.png" class="img-fluid h-100" alt="Logo El rincón del lector" style="object-fit: cover;">
+                                </div>
+                                <div class="col-12 col-md-6 h-100">
+                                    <div class="card-body d-flex flex-column justify-content-center align-items-center text-center text-md-start" style="color: black;">
+                                        <h5 class="card-title">El Rincón del Lector</h5>
+                                        <p class="card-text">Aplicación de compraventa de libros</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Proyecto 2 -->
+                <div class="carousel-item">
+                    <a href="https://github.com/ALEXBC16/Cafe-con-Pantallas" target="_blank" class="text-decoration-none">
+                        <div class="card mx-auto slider-box" style="max-width: 40rem;">
+                            <div class="row g-0 h-100">
+                                <div class="col-12 col-md-6 h-100">
+                                    <img src="../media/img/Logo_CafeConPantallas.png" class="img-fluid h-100" alt="Logo Café con Pantallas" style="object-fit: cover;">
+                                </div>
+                                <div class="col-12 col-md-6 h-100">
+                                    <div class="card-body d-flex flex-column justify-content-center align-items-center text-center text-md-start" style="color: black;">
+                                        <h5 class="card-title">Café con Pantallas</h5>
+                                        <p class="card-text">Podcast realizado en colaboración con Xenxo Taboas Alonso</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Controles -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#proyectosCarousel"
+                data-bs-slide="prev">
+                <i class="fas fa-chevron-left" aria-hidden="true"></i>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#proyectosCarousel"
+                data-bs-slide="next">
+                <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section class="py-5 rounded-3" id="contact">
+        <div class="container">
+            <div class="row align-items-start justify-content-between">
+                <!-- Columna de Contacto con texto y enlace -->
+                <div class="col-md-5">
+                    <h2 class="mb-4">Contacto</h2>
+                    <p class="mb-5">
+                        Puedes contactarme a través de <a href="mailto:alexlp1404@gmail.com?">alexlp1404@gmail.com</a> 
+                        o de <a href="https://www.linkedin.com/in/alejandro-lópez-pedreira-19a28127a/" target="_blank">LinkedIn</a>. 
+                    </p>
+                    <p class="mb-5">
+                        Si lo prefieres, puedes rellenar el formulario de contacto y te responderé lo antes posible.
+                    </p>
+                </div>
+                
+                <!-- Columna de Formulario de Contacto -->
+                <div class="col-md-6">
+                    <form id="contact-form">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="name" placeholder="Ej: Juan" required data-bs-toggle="tooltip" title="Nombre completo">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Ej: examplemail@gmail.com" required data-bs-toggle="tooltip" title="Dirección de correo electrónico">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Mensaje</label>
+                            <textarea id="message" class="form-control" placeholder="Escribe tu mensaje..." required data-bs-toggle="tooltip" title="Mensaje que deseas enviar"></textarea>
+                        </div>
+                        <button type="button" id="send-button" class="form-btn btn btn-primary">
+                            <span>Enviar</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 74 74" height="20" width="34">
+                                <circle stroke-width="5" stroke="white" r="35.5" cy="37" cx="37"></circle>
+                                <path fill="white" stroke-width="5" d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z"></path>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-white text-center py-4">
+        <div>
+            <a href="https://www.linkedin.com/in/alejandro-lópez-pedreira-19a28127a/" target="_blank" class="text-decoration-none me-3">
+                <i class="fab fa-linkedin fa-lg"></i>
+            </a>
+            <a href="https://github.com/ALEXBC16" target="_blank" class="text-decoration-none">
+                <i class="fab fa-github fa-lg"></i>
+            </a>
+        </div>
+        <p>&copy; 2025 Alejandro López Pedreira. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
