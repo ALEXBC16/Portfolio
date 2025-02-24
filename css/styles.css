@@ -42,19 +42,43 @@ h1, h2, h3, h4 {
     color: var(--text-color-light) !important;
 }
 
-.foto-perfil, .foto-moto {
-    object-fit: cover;
-    border-radius: 10px;
+.Quiensoy{
+    padding-top: 25px;
+}
+
+.texto{
+    font-size: large;
 }
 
 .foto-perfil {
     height: 300px;
-    width: 200px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .foto-moto {
     height: 400px;
     width: 600px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.skill {
+    width: max-content;
+    margin: 0 auto;
+}
+
+.skill-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#skills{
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    width: 70%;
+    justify-self: center;
+    margin-top: 75px;
 }
 
 .navbar-nav .nav-link {
@@ -77,6 +101,12 @@ p {
     border-radius: 15px;
 }
 
+.carousel-item{
+    background-color: #1e1e1e;
+    padding: 5%;
+    border-radius: 15px;
+}
+
 .btn-primary {
     background-color: var(--primary-color);
     border-color: var(--primary-dark);
@@ -88,9 +118,15 @@ p {
     border-color: #006699;
 }
 
+#contact{
+    padding: 5%;
+    border-radius: 15px;
+    margin: 15px;
+}
+
 footer {
     background-color: var(--navbar-bg);
-    padding: 20px;
+    padding: 50px;
     text-align: center;
     width: 100%;
     display: flex;
