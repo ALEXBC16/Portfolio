@@ -48,18 +48,19 @@ h1, h2, h3, h4 {
 
 .texto{
     font-size: large;
+    text-align: justify;
 }
 
 .foto-perfil {
-    height: 300px;
-    width: 300px;
+    height: 75%;
+    width: 75%;
     object-fit: cover;
     border-radius: 50%;
 }
 
 .foto-moto {
-    height: 400px;
-    width: 600px;
+    height: 100%;
+    width: 100%;
     object-fit: cover;
     border-radius: 15px;
 }
