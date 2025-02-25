@@ -108,14 +108,14 @@ p {
     border-radius: 15px;
 }
 
-.btn-primary {
+#btn-primary {
     background-color: var(--primary-color);
     border-color: var(--primary-dark);
     transition: background-color 0.3s, border-color 0.3s;
     border-radius: 5px;
 }
 
-.btn-primary:hover {
+#btn-primary:hover {
     background-color: var(--primary-dark);
     border-color: #006699;
 }
