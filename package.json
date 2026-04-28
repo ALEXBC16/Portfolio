@@ -1,0 +1,12 @@
+{
+  "name": "alejandro-lopez-pedreira-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website for Alejandro López Pedreira",
+  "private": true,
+  "scripts": {
+    "test": "echo \"No tests specified\""
+  },
+  "dependencies": {
+    "@vercel/speed-insights": "^2.0.0"
+  }
+}
