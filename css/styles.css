@@ -26,6 +26,7 @@ h1, h2, h3, h4 {
     font-family: 'Roboto', sans-serif;
 }
 
+/* NAVBAR */
 .navbar {
     background-color: var(--navbar-bg);
 }
@@ -34,19 +35,26 @@ h1, h2, h3, h4 {
     height: 100px;
 }
 
-.card-title, .card-text {
-    color: var(--text-color-dark);
-}
-
 .navbar-brand, .nav-link {
     color: var(--text-color-light) !important;
 }
 
-.Quiensoy{
+.navbar-nav .nav-link {
+    padding: 10px 15px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--text-color-light) !important;
+    background-color: var(--primary-dark) !important;
+    text-shadow: 0 0 5px var(--text-color-light);
+}
+
+/* ABOUT */
+.Quiensoy {
     padding-top: 25px;
 }
 
-.texto{
+.texto {
     font-size: large;
     text-align: justify;
 }
@@ -65,6 +73,7 @@ h1, h2, h3, h4 {
     border-radius: 15px;
 }
 
+/* SKILLS */
 .skill {
     width: max-content;
     margin: 0 auto;
@@ -72,9 +81,10 @@ h1, h2, h3, h4 {
 
 .skill-row {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
 }
-#skills{
+
+#skills {
     background-color: #1e1e1e;
     border-radius: 10px;
     width: 70%;
@@ -82,32 +92,47 @@ h1, h2, h3, h4 {
     margin-top: 75px;
 }
 
-.navbar-nav .nav-link {
-    padding: 10px 15px;
-}
-
-.navbar-nav .nav-link:hover {
-    color: var(--text-color-light) !important;
-    background-color: var(--primary-dark) !important;
-    text-shadow: 0 0 5px var(--text-color-light);
-}
-
+/* TEXTO GENERAL */
 p {
     color: var(--text-color-light);
     text-align: justify;
     letter-spacing: 0.5px;
 }
 
+/* PROYECTOS (ARREGLO DEL SUBRAYADO + EFECTOS) */
+#projects a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.card-title, .card-text {
+    color: var(--text-color-dark);
+}
+
+/* EFECTO HOVER PRO */
+.slider-box {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px;
+}
+
+#projects a:hover .slider-box {
+    transform: scale(1.03);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+}
+
+/* CAROUSEL */
 .carousel-inner img {
     border-radius: 15px;
 }
 
-.carousel-item{
+.carousel-item {
     background-color: #1e1e1e;
     padding: 5%;
     border-radius: 15px;
 }
 
+/* BOTÓN */
 #btn-primary {
     background-color: var(--primary-color);
     border-color: var(--primary-dark);
@@ -120,12 +145,14 @@ p {
     border-color: #006699;
 }
 
-#contact{
+/* CONTACT */
+#contact {
     padding: 5%;
     border-radius: 15px;
     margin: 15px;
 }
 
+/* FOOTER */
 footer {
     background-color: var(--navbar-bg);
     padding: 50px;
@@ -158,4 +185,3 @@ footer .fab {
 footer .fab:hover {
     color: var(--primary-color);
 }
-
