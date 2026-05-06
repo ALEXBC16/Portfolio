@@ -2,19 +2,28 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio - Alejandro López Pedreira</title>
+    <meta
+      name="description"
+      content="Portfolio de Alejandro López Pedreira, desarrollador de aplicaciones web y multiplataforma especializado en React, Spring Boot y bases de datos."
+    />
     <link rel="icon" href="../media/img/ALP_blanco.png" type="image/x-icon" />
+
+    <!-- Bootstrap -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
     />
+
+    <!-- Icons -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+    <!-- CSS -->
     <link rel="stylesheet" href="../css/styles.css" />
-    <script type="module" src="../speed-insights.js"></script>
+
     <!-- Vercel Analytics -->
     <script defer src="/_vercel/insights/script.js"></script>
 
@@ -32,29 +41,35 @@
 
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
-        <a class="navbar-brand" href="es_index.html"
-          ><img
+        <a class="navbar-brand" href="es_index.html">
+          <img
             src="../media/img/ALP_blanco.png"
             alt="Logo Alejandro López Pedreira"
-        /></a>
+            style="height: 50px"
+          />
+        </a>
+
         <button
           class="navbar-toggler"
+          aria-label="Abrir menú de navegación"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav ms-auto align-items-center">
             <li class="nav-item">
-              <a class="nav-link" href="../index.html"
-                ><svg
+              <a
+                class="nav-link"
+                href="../index.html"
+                aria-label="Cambiar idioma a inglés"
+              >
+                <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="72"
                   height="72"
@@ -108,7 +123,7 @@
               ></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="es_about.html">Sobre mi</a>
+              <a class="nav-link" href="es_about.html">Sobre mí</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#projects">Proyectos</a>
@@ -119,51 +134,65 @@
             <li class="nav-item">
               <a
                 class="nav-link"
-                href="../media/pdf/Alejandro_ Lopez_Pedreira_CV_Espanhol.pdf"
-                >Descargar CV</a
+                href="../media/pdf/Alejandro_Lopez_Pedreira_CV_Espanhol.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Ver currículum de Alejandro López Pedreira"
               >
+                Ver CV
+              </a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <!-- Sección Sobre Mí -->
+    <!-- About -->
     <section class="container" id="about">
       <div class="row align-items-center">
         <h1 class="Quiensoy">¿Quién soy?</h1>
-        <div class="d-flex justify-content-between align-items-center gap-5">
+
+        <div class="row align-items-center mt-3">
           <div class="col-md-8">
             <p class="texto">
-              Desarrollador de aplicaciones tanto web como multiplataforma con
-              ganas de seguir aprendiendo del mundillo del desarrollo, pero no
-              por ello cerrado a aprender otros ámbitos.
+              Desarrollador de aplicaciones web y multiplataforma, centrado en
+              crear aplicaciones escalables utilizando tecnologías modernas como
+              React, Spring Boot y bases de datos relacionales.
             </p>
-            <p class="mb-1">
+
+            <p class="mb-2">
               <i class="fas fa-map-marker-alt me-2"></i>A Coruña
             </p>
-            <div>
+
+            <div class="mb-3">
               <a
                 href="https://www.linkedin.com/in/alejandro-lópez-pedreira-19a28127a/"
                 target="_blank"
-                class="text-decoration-none me-3"
+                rel="noopener noreferrer"
+                class="me-3"
+                aria-label="Perfil de LinkedIn de Alejandro López Pedreira"
               >
                 <i class="fab fa-linkedin fa-lg"></i>
               </a>
               <a
                 href="https://github.com/ALEXBC16"
                 target="_blank"
-                class="text-decoration-none"
+                rel="noopener noreferrer"
+                aria-label="Perfil de GitHub de Alejandro López Pedreira"
               >
                 <i class="fab fa-github fa-lg"></i>
               </a>
             </div>
+
+            <a href="#contact" class="btn btn-primary">Contáctame</a>
           </div>
-          <div class="col-md-4 text-end foto-container">
+
+          <div class="col-md-4 text-center text-md-end foto-container">
             <img
+              loading="lazy"
               class="foto-perfil"
               src="../media/img/Foto_carnet.jpg"
-              alt="Foto de perfil"
+              alt="Foto de perfil de Alejandro López Pedreira"
             />
           </div>
         </div>
@@ -173,9 +202,9 @@
     <!-- Sección Tecnologias -->
     <section class="py-3 rounded-3" id="skills">
       <div class="container">
-        <h2 class="text-center my-3">Habilidades y Tecnologias</h2>
+        <h2 class="text-center my-3">Habilidades y Tecnologías</h2>
         <div class="row text-center justify-content-center skill-row">
-          <div class="col-md-2 my-3 skill">
+          <div class="col-6 col-md-4 col-lg-2 my-3 skill">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="35"
@@ -196,7 +225,7 @@
             </svg>
             <p>Java</p>
           </div>
-          <div class="col-md-2 my-3 skill">
+          <div class="col-6 col-md-4 col-lg-2 my-3 skill">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="35"
@@ -210,7 +239,7 @@
             </svg>
             <p>PHP</p>
           </div>
-          <div class="col-md-2 my-3 skill">
+          <div class="col-6 col-md-4 col-lg-2 my-3 skill">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="35.14"
@@ -250,7 +279,7 @@
             </svg>
             <p>Python</p>
           </div>
-          <div class="col-md-2 my-3 skill">
+          <div class="col-6 col-md-4 col-lg-2 my-3 skill">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="35"
@@ -267,17 +296,17 @@
             </svg>
             <p>Spring</p>
           </div>
-          <div class="col-md-2 my-3 skill">
+          <div class="col-6 col-md-4 col-lg-2 my-3 skill">
             <i class="fab fa-react fa-2x text-primary"></i>
             <p>React</p>
           </div>
-          <div class="col-md-2 my-3 skill">
+          <div class="col-6 col-md-4 col-lg-2 my-3 skill">
             <i class="fab fa-git-alt fa-2x text-danger"></i>
             <p>Git</p>
           </div>
         </div>
         <div class="row text-center justify-content-center skill-row">
-          <div class="col-md-2 my-3 skill">
+          <div class="col-6 col-md-4 col-lg-2 my-3 skill">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="35"
@@ -304,7 +333,7 @@
             <p>MySQL</p>
           </div>
 
-          <div class="col-md-2 my-3 skill">
+          <div class="col-6 col-md-4 col-lg-2 my-3 skill">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="35"
@@ -329,7 +358,7 @@
             </svg>
             <p>MongoDB</p>
           </div>
-          <div class="col-md-2 my-3 skill">
+          <div class="col-6 col-md-4 col-lg-2 my-3 skill">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="35"
@@ -343,7 +372,7 @@
             </svg>
             <p>JavaScript</p>
           </div>
-          <div class="col-md-2 my-3 skill">
+          <div class="col-6 col-md-4 col-lg-2 my-3 skill">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="35"
@@ -361,11 +390,11 @@
             </svg>
             <p>TypeScript</p>
           </div>
-          <div class="col-md-2 my-3 skill">
+          <div class="col-6 col-md-4 col-lg-2 my-3 skill">
             <i class="fab fa-figma fa-2x text-white"></i>
             <p>Figma</p>
           </div>
-          <div class="col-md-2 my-3 skill">
+          <div class="col-6 col-md-4 col-lg-2 my-3 skill">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="35"
@@ -387,40 +416,40 @@
       </div>
     </section>
 
-    <!-- Sección Proyectos -->
+    <!-- Projects -->
     <section class="container py-5" id="projects">
       <h2 class="text-center mb-4">Proyectos Personales</h2>
+
       <div
         id="proyectosCarousel"
         class="carousel slide"
         data-bs-ride="carousel"
       >
         <div class="carousel-inner">
-          <!-- Proyecto 1 -->
           <div class="carousel-item active">
             <a
               href="https://github.com/ALEXBC16/TFC-Desarrollo-de-Aplicaciones-Multiplataforma"
               target="_blank"
-              class="text-decoration-none"
+              rel="noopener noreferrer"
             >
               <div class="card mx-auto slider-box" style="max-width: 40rem">
                 <div class="row g-0 h-100">
-                  <div class="col-12 col-md-6 h-100">
+                  <div class="col-md-6">
                     <img
+                      loading="lazy"
                       src="../media/img/Logo.png"
                       class="img-fluid h-100"
-                      alt="Logo El rincón del lector"
+                      alt="Book marketplace app"
                       style="object-fit: cover"
                     />
                   </div>
-                  <div class="col-12 col-md-6 h-100">
-                    <div
-                      class="card-body d-flex flex-column justify-content-center align-items-center text-center text-md-start"
-                      style="color: black"
-                    >
+                  <div class="col-md-6 d-flex align-items-center">
+                    <div class="card-body text-center">
                       <h5 class="card-title">El Rincón del Lector</h5>
                       <p class="card-text">
-                        Aplicación de compraventa de libros
+                        Aplicación web full-stack para la compra y venta de
+                        libros con autenticación, API REST y base de datos
+                        MySQL.
                       </p>
                     </div>
                   </div>
@@ -429,32 +458,29 @@
             </a>
           </div>
 
-          <!-- Proyecto 2 -->
           <div class="carousel-item">
             <a
               href="https://github.com/ALEXBC16/Cafe-con-Pantallas"
               target="_blank"
-              class="text-decoration-none"
+              rel="noopener noreferrer"
             >
               <div class="card mx-auto slider-box" style="max-width: 40rem">
                 <div class="row g-0 h-100">
-                  <div class="col-12 col-md-6 h-100">
+                  <div class="col-md-6">
                     <img
+                      loading="lazy"
                       src="../media/img/Logo_CafeConPantallas.png"
                       class="img-fluid h-100"
-                      alt="Logo Café con Pantallas"
+                      alt="Podcast project"
                       style="object-fit: cover"
                     />
                   </div>
-                  <div class="col-12 col-md-6 h-100">
-                    <div
-                      class="card-body d-flex flex-column justify-content-center align-items-center text-center text-md-start"
-                      style="color: black"
-                    >
+                  <div class="col-md-6 d-flex align-items-center">
+                    <div class="card-body text-center">
                       <h5 class="card-title">Café con Pantallas</h5>
                       <p class="card-text">
-                        Podcast realizado en colaboración con Xenxo Taboas
-                        Alonso
+                        Proyecto de podcast centrado en tecnología, creación de
+                        contenido y colaboración.
                       </p>
                     </div>
                   </div>
@@ -464,152 +490,82 @@
           </div>
         </div>
 
-        <!-- Controles -->
         <button
           class="carousel-control-prev"
           type="button"
           data-bs-target="#proyectosCarousel"
           data-bs-slide="prev"
+          aria-label="Proyecto anterior"
         >
-          <i class="fas fa-chevron-left" aria-hidden="true"></i>
-          <span class="visually-hidden">Anterior</span>
+          <i class="fas fa-chevron-left"></i>
         </button>
+
         <button
           class="carousel-control-next"
           type="button"
           data-bs-target="#proyectosCarousel"
           data-bs-slide="next"
+          aria-label="Siguiente proyecto"
         >
-          <i class="fas fa-chevron-right" aria-hidden="true"></i>
-          <span class="visually-hidden">Siguiente</span>
+          <i class="fas fa-chevron-right"></i>
         </button>
       </div>
     </section>
 
-    <!-- Sección de Contacto -->
+    <!-- Contact -->
     <section class="py-5 rounded-3" id="contact">
       <div class="container">
-        <div class="row align-items-start justify-content-between">
+        <div class="row">
           <div class="col-md-5">
-            <h2 class="mb-4">Contacto</h2>
-            <p class="mb-5">
-              Puedes contactarme a traves de
-              <a
-                href="mailto:alexlp1404@gmail.com?subject=Contacto%20a%20través%20del%20portfolio&body=Buenas%20Alex,%0A%0AMe%20gustaría%20hablar%20contigo%20sobre%20...%0A%0AUn%20saludo,%0A%22Tu%20nombre%22"
-                >alexlp1404@gmail.com</a
-              >
-              o de
+            <h2>Contacto</h2>
+
+            <p class="mb-3">
+              <i class="fas fa-envelope me-2"></i>
+              <a href="mailto:alexlp1404@gmail.com">alexlp1404@gmail.com</a>
+            </p>
+
+            <p>
+              <i class="fab fa-linkedin me-2"></i>
               <a
                 href="https://www.linkedin.com/in/alejandro-lópez-pedreira-19a28127a/"
                 target="_blank"
-                >LinkedIn</a
-              >.
-            </p>
-            <p>
-              Si lo prefieres puedes cubrir el formulario de al lado para
-              ponerte en contacto conmigo.
+                rel="noopener noreferrer"
+              >
+                LinkedIn Profile
+              </a>
             </p>
           </div>
+
           <div class="col-md-6">
-            <form id="contact-form">
-              <div class="mb-3">
-                <label for="name" class="form-label">Nombre</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="name"
-                  placeholder="Ej: Juan Alvarez Fernandez"
-                  required
-                  data-bs-toggle="tooltip"
-                  title="Inserte su nombre"
-                />
-              </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Correo</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  placeholder="Ej: ejemplo@email.com"
-                  required
-                  data-bs-toggle="tooltip"
-                  title="Inserte su correo electrónico"
-                />
-              </div>
-              <div class="mb-3">
-                <label for="message" class="form-label">Mensaje</label>
-                <textarea
-                  id="message"
-                  class="form-control"
-                  placeholder="Escriba aqui su mensaje"
-                  required
-                  data-bs-toggle="tooltip"
-                  title="Escriba aqui su mensaje"
-                ></textarea>
-              </div>
-              <button type="button" id="btn-primary">
-                <span>Enviar</span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 74 74"
-                  height="20"
-                  width="34"
-                >
-                  <circle
-                    stroke-width="5"
-                    stroke="white"
-                    r="35.5"
-                    cy="37"
-                    cx="37"
-                  ></circle>
-                  <path
-                    fill="white"
-                    stroke-width="5"
-                    d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z"
-                  ></path>
-                </svg>
+            <form>
+              <input
+                type="text"
+                autocomplete="name"
+                id="name"
+                class="form-control mb-2"
+                placeholder="Nombre"
+                required
+              />
+              <input
+                type="email"
+                autocomplete="email"
+                id="email"
+                class="form-control mb-2"
+                placeholder="Correo electrónico"
+                required
+              />
+              <textarea
+                autocomplete="off"
+                id="message"
+                class="form-control mb-2"
+                placeholder="Mensaje"
+                required
+              ></textarea>
+
+              <button type="button" id="sendBtn" class="btn btn-primary">
+                Enviar
               </button>
             </form>
-
-            <script>
-              document.addEventListener("DOMContentLoaded", function () {
-                var tooltipTriggerList = Array.from(
-                  document.querySelectorAll('[data-bs-toggle="tooltip"]'),
-                );
-                tooltipTriggerList.forEach(function (tooltipTriggerEl) {
-                  new bootstrap.Tooltip(tooltipTriggerEl);
-                });
-
-                document
-                  .getElementById("btn-primary")
-                  .addEventListener("click", function () {
-                    // Obtener valores del formulario
-                    const name = document.getElementById("name").value;
-                    const email = document.getElementById("email").value;
-                    const message = document.getElementById("message").value;
-
-                    // Construir enlace mailto
-                    const mailtoLink = `mailto:alexlp1404@gmail.com?subject=Contacto%20a%20través%20del%20portfolio&body=%20${encodeURIComponent(message)}`;
-
-                    // Abrir el enlace
-                    window.location.href = mailtoLink;
-                  });
-
-                window.addEventListener("load", function () {
-                  // Mostrar el modal cuando se cargue la página
-                  var modal = new bootstrap.Modal(
-                    document.getElementById("welcomeModal"),
-                  );
-                  modal.show();
-
-                  // Cerrar el modal automáticamente después de 3 segundos
-                  setTimeout(function () {
-                    modal.hide();
-                  }, 3000);
-                });
-              });
-            </script>
           </div>
         </div>
       </div>
@@ -621,24 +577,80 @@
         <a
           href="https://www.linkedin.com/in/alejandro-lópez-pedreira-19a28127a/"
           target="_blank"
+          rel="noopener noreferrer"
           class="text-decoration-none me-3"
+          aria-label="Perfil de LinkedIn de Alejandro López Pedreira"
         >
           <i class="fab fa-linkedin fa-lg"></i>
         </a>
         <a
           href="https://github.com/ALEXBC16"
           target="_blank"
+          rel="noopener noreferrer"
           class="text-decoration-none"
+          aria-label="Perfil de GitHub de Alejandro López Pedreira"
         >
           <i class="fab fa-github fa-lg"></i>
         </a>
       </div>
       <p>
-        &copy; 2025 Alejandro López Pedreira. Todos los derechos reservados.
+        &copy; <span id="copyright"></span>
+        Alejandro López Pedreira. Todos los derechos reservados.
       </p>
     </footer>
 
+    <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JS -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document
+          .getElementById("sendBtn")
+          .addEventListener("click", async function () {
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const message = document.getElementById("message").value;
+
+            if (!name || !email || !message) {
+              alert("Por favor, completa todos los campos");
+              return;
+            }
+
+            try {
+              const response = await fetch("/api/send-email", {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                  name,
+                  email,
+                  message,
+                }),
+              });
+
+              if (response.ok) {
+                alert("¡Mensaje enviado correctamente!");
+
+                document.getElementById("name").value = "";
+                document.getElementById("email").value = "";
+                document.getElementById("message").value = "";
+              } else {
+                alert("Error al enviar el mensaje");
+              }
+            } catch (error) {
+              alert("Error del servidor");
+            }
+          });
+      });
+    </script>
+    <script>
+      const startYear = 2025;
+      const currentYear = new Date().getFullYear();
+
+      document.getElementById("copyright").textContent =
+        startYear === currentYear ? startYear : `${startYear}–${currentYear}`;
+    </script>
   </body>
 </html>

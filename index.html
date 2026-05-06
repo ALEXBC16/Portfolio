@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio - Alejandro López Pedreira</title>
+    <meta
+      name="description"
+      content="Portfolio of Alejandro López Pedreira, web and cross-platform application developer specialized in React, Spring Boot and databases."
+    />
     <link rel="icon" href="media/img/ALP_blanco.png" type="image/x-icon" />
 
     <!-- Bootstrap -->
@@ -49,6 +53,7 @@
 
         <button
           class="navbar-toggler"
+          aria-label="Open navigation menu"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
@@ -59,7 +64,10 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto align-items-center">
             <li class="nav-item">
-              <a class="nav-link" href="html/es_index.html"
+              <a
+                class="nav-link"
+                href="html/es_index.html"
+                aria-label="Change language to Spanish"
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="72"
@@ -106,6 +114,7 @@
                 href="media/pdf/Alejandro_Lopez_Pedreira_CV_English.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="View Alejandro López Pedreira's CV"
               >
                 View CV
               </a>
@@ -136,11 +145,18 @@
               <a
                 href="https://www.linkedin.com/in/alejandro-lópez-pedreira-19a28127a/"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="me-3"
+                aria-label="LinkedIn profile of Alejandro López Pedreira"
               >
                 <i class="fab fa-linkedin fa-lg"></i>
               </a>
-              <a href="https://github.com/ALEXBC16" target="_blank">
+              <a
+                href="https://github.com/ALEXBC16"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub profile of Alejandro López Pedreira"
+              >
                 <i class="fab fa-github fa-lg"></i>
               </a>
             </div>
@@ -150,9 +166,10 @@
 
           <div class="col-md-4 text-center text-md-end foto-container">
             <img
+              loading="lazy"
               class="foto-perfil"
               src="media/img/Foto_carnet.jpg"
-              alt="Profile photo Alejandro López Pedreira"
+              alt="Profile photo of Alejandro López Pedreira"
             />
           </div>
         </div>
@@ -390,11 +407,13 @@
             <a
               href="https://github.com/ALEXBC16/TFC-Desarrollo-de-Aplicaciones-Multiplataforma"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <div class="card mx-auto slider-box" style="max-width: 40rem">
                 <div class="row g-0 h-100">
                   <div class="col-md-6">
                     <img
+                      loading="lazy"
                       src="media/img/Logo.png"
                       class="img-fluid h-100"
                       alt="Book marketplace app"
@@ -419,11 +438,13 @@
             <a
               href="https://github.com/ALEXBC16/Cafe-con-Pantallas"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <div class="card mx-auto slider-box" style="max-width: 40rem">
                 <div class="row g-0 h-100">
                   <div class="col-md-6">
                     <img
+                      loading="lazy"
                       src="media/img/Logo_CafeConPantallas.png"
                       class="img-fluid h-100"
                       alt="Podcast project"
@@ -450,6 +471,7 @@
           type="button"
           data-bs-target="#proyectosCarousel"
           data-bs-slide="prev"
+          aria-label="Previous project"
         >
           <i class="fas fa-chevron-left"></i>
         </button>
@@ -459,6 +481,7 @@
           type="button"
           data-bs-target="#proyectosCarousel"
           data-bs-slide="next"
+          aria-label="Next project"
         >
           <i class="fas fa-chevron-right"></i>
         </button>
@@ -477,13 +500,23 @@
               <a href="mailto:alexlp1404@gmail.com">alexlp1404@gmail.com</a>
             </p>
 
-            <p>You can also contact me through LinkedIn.</p>
+            <p>
+              <i class="fab fa-linkedin me-2"></i>
+              <a
+                href="https://www.linkedin.com/in/alejandro-lópez-pedreira-19a28127a/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn Profile
+              </a>
+            </p>
           </div>
 
           <div class="col-md-6">
             <form>
               <input
                 type="text"
+                autocomplete="name"
                 id="name"
                 class="form-control mb-2"
                 placeholder="Name"
@@ -491,6 +524,7 @@
               />
               <input
                 type="email"
+                autocomplete="email"
                 id="email"
                 class="form-control mb-2"
                 placeholder="Email"
@@ -498,12 +532,13 @@
               />
               <textarea
                 id="message"
+                autocomplete="off"
                 class="form-control mb-2"
                 placeholder="Message"
                 required
               ></textarea>
 
-              <button type="button" id="btn-primary" class="btn btn-primary">
+              <button type="button" id="sendBtn" class="btn btn-primary">
                 Send
               </button>
             </form>
@@ -518,19 +553,26 @@
         <a
           href="https://www.linkedin.com/in/alejandro-lópez-pedreira-19a28127a/"
           target="_blank"
+          rel="noopener noreferrer"
           class="text-decoration-none me-3"
+          aria-label="LinkedIn profile of Alejandro López Pedreira"
         >
           <i class="fab fa-linkedin fa-lg"></i>
         </a>
         <a
           href="https://github.com/ALEXBC16"
           target="_blank"
+          rel="noopener noreferrer"
           class="text-decoration-none"
+          aria-label="GitHub profile of Alejandro López Pedreira"
         >
           <i class="fab fa-github fa-lg"></i>
         </a>
       </div>
-      <p>&copy; 2025 Alejandro López Pedreira. All rights reserved.</p>
+      <p>
+        &copy; <span id="copyright"></span>
+        Alejandro López Pedreira. All rights reserved.
+      </p>
     </footer>
 
     <!-- Bootstrap -->
@@ -540,7 +582,7 @@
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         document
-          .getElementById("btn-primary")
+          .getElementById("sendBtn")
           .addEventListener("click", async function () {
             const name = document.getElementById("name").value;
             const email = document.getElementById("email").value;
@@ -578,6 +620,13 @@
             }
           });
       });
+    </script>
+    <script>
+      const startYear = 2025;
+      const currentYear = new Date().getFullYear();
+
+      document.getElementById("copyright").textContent =
+        startYear === currentYear ? startYear : `${startYear}–${currentYear}`;
     </script>
   </body>
 </html>
