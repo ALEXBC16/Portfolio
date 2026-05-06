@@ -19,8 +19,6 @@
     />
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css" />
-
-    <script type="module" src="speed-insights.js"></script>
   </head>
 
   <body>
@@ -518,9 +516,7 @@
           <i class="fab fa-github fa-lg"></i>
         </a>
       </div>
-      <p>
-        &copy; 2025 Alejandro López Pedreira. All rights reserved.
-      </p>
+      <p>&copy; 2025 Alejandro López Pedreira. All rights reserved.</p>
     </footer>
 
     <!-- Bootstrap -->
@@ -531,7 +527,7 @@
       document.addEventListener("DOMContentLoaded", function () {
         document
           .getElementById("btn-primary")
-          .addEventListener("click", function () {
+          .addEventListener("click", async function () {
             const name = document.getElementById("name").value;
             const email = document.getElementById("email").value;
             const message = document.getElementById("message").value;
@@ -541,11 +537,36 @@
               return;
             }
 
-            const mailtoLink = `mailto:alexlp1404@gmail.com?subject=Portfolio%20Contact&body=Name:%20${encodeURIComponent(name)}%0AEmail:%20${encodeURIComponent(email)}%0AMessage:%20${encodeURIComponent(message)}`;
+            try {
+              const response = await fetch("/api/send-email", {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                  name,
+                  email,
+                  message,
+                }),
+              });
 
-            window.location.href = mailtoLink;
+              if (response.ok) {
+                alert("Message sent successfully!");
+
+                document.getElementById("name").value = "";
+                document.getElementById("email").value = "";
+                document.getElementById("message").value = "";
+              } else {
+                alert("Error sending message");
+              }
+            } catch (error) {
+              alert("Server error");
+            }
           });
       });
     </script>
+
+    <!-- Vercel Speed Insights -->
+    <script defer src="/_vercel/insights/script.js"></script>
   </body>
 </html>

@@ -7,6 +7,20 @@
     "test": "echo \"No tests specified\""
   },
   "dependencies": {
-    "@vercel/speed-insights": "^2.0.0"
-  }
+    "@vercel/speed-insights": "^2.0.0",
+    "resend": "^6.12.2"
+  },
+  "main": "script.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ALEXBC16/Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/ALEXBC16/Portfolio/issues"
+  },
+  "homepage": "https://github.com/ALEXBC16/Portfolio#readme"
 }
