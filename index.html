@@ -8,7 +8,7 @@
       name="description"
       content="Portfolio of Alejandro López Pedreira, web and cross-platform application developer specialized in React, Spring Boot and databases."
     />
-    <link rel="icon" href="media/img/ALP_blanco.png" type="image/x-icon" />
+    <link rel="icon" href="media/img/ALP_blanco.png" type="image/png" />
 
     <!-- Bootstrap -->
     <link
@@ -594,29 +594,41 @@
 
           <div class="col-md-6">
             <form>
-              <input
-                type="text"
-                autocomplete="name"
-                id="name"
-                class="form-control mb-2"
-                placeholder="Name"
-                required
-              />
-              <input
-                type="email"
-                autocomplete="email"
-                id="email"
-                class="form-control mb-2"
-                placeholder="Email"
-                required
-              />
-              <textarea
-                id="message"
-                autocomplete="off"
-                class="form-control mb-2"
-                placeholder="Message"
-                required
-              ></textarea>
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input
+                  type="text"
+                  autocomplete="name"
+                  id="name"
+                  class="form-control"
+                  placeholder="John Doe"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  autocomplete="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="johndoe@email.com"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  id="message"
+                  autocomplete="off"
+                  class="form-control"
+                  placeholder="Hi Alejandro, I would like to talk about..."
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
 
               <button type="button" id="sendBtn" class="btn btn-primary">
                 Send

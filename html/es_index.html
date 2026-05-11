@@ -8,7 +8,7 @@
       name="description"
       content="Portfolio de Alejandro López Pedreira, desarrollador de aplicaciones web y multiplataforma especializado en React, Spring Boot y bases de datos."
     />
-    <link rel="icon" href="../media/img/ALP_blanco.png" type="image/x-icon" />
+    <link rel="icon" href="../media/img/ALP_blanco.png" type="image/png" />
 
     <!-- Bootstrap -->
     <link
@@ -426,26 +426,102 @@
         data-bs-ride="carousel"
       >
         <div class="carousel-inner">
+          <!-- 1ª marcha -->
           <div class="carousel-item active">
             <a
-              href="https://github.com/ALEXBC16/TFC-Desarrollo-de-Aplicaciones-Multiplataforma"
+              href="https://github.com/ALEXBC16/1a_Marcha"
               target="_blank"
               rel="noopener noreferrer"
             >
               <div class="card mx-auto slider-box" style="max-width: 45rem">
                 <div class="row g-0 h-100">
                   <div class="col-md-6">
-                    <img
-                      loading="lazy"
-                      src="../media/img/Logo.png"
-                      class="img-fluid h-100"
-                      alt="Book marketplace app"
-                      style="object-fit: cover"
-                    />
+                    <div class="project-image-container">
+                      <img
+                        loading="lazy"
+                        src="../media/img/Logo_1aMarcha.png"
+                        class="img-fluid"
+                        alt="Plataforma de autoescuela"
+                      />
+                    </div>
                   </div>
+
+                  <div class="col-md-6 d-flex align-items-center">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">1ª marcha</h5>
+
+                      <p class="card-text">
+                        Plataforma de autoescuela desarrollada con React, Spring
+                        Boot y MySQL, con autenticación, tests online, gestión
+                        de roles e integración con PayPal.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Basquet Coruña -->
+          <div class="carousel-item">
+            <a
+              href="https://github.com/ALEXBC16/Basquet_Coruna_App"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="card mx-auto slider-box" style="max-width: 45rem">
+                <div class="row g-0 h-100">
+                  <div class="col-md-6">
+                    <div class="project-image-container">
+                      <img
+                        loading="lazy"
+                        src="../media/img/Logo_BasquetCorunha.png"
+                        class="img-fluid"
+                        alt="Aplicación móvil de Basquet Coruña"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 d-flex align-items-center">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Basquet Coruña App</h5>
+
+                      <p class="card-text">
+                        Aplicación móvil para la gestión de entradas y abonos de
+                        Basquet Coruña, incluyendo pagos seguros, calendario de
+                        partidos y autenticación de usuarios.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- El Rincón del Lector -->
+          <div class="carousel-item">
+            <a
+              href="https://github.com/ALEXBC16/El_Rincon_del_Lector"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="card mx-auto slider-box" style="max-width: 45rem">
+                <div class="row g-0 h-100">
+                  <div class="col-md-6">
+                    <div class="project-image-container">
+                      <img
+                        loading="lazy"
+                        src="../media/img/Logo_ElRinconDelLector.png"
+                        class="img-fluid"
+                        alt="Aplicación de compra y venta de libros"
+                      />
+                    </div>
+                  </div>
+
                   <div class="col-md-6 d-flex align-items-center">
                     <div class="card-body text-center">
                       <h5 class="card-title">El Rincón del Lector</h5>
+
                       <p class="card-text">
                         Aplicación web full-stack para la compra y venta de
                         libros con autenticación, API REST y base de datos
@@ -458,6 +534,7 @@
             </a>
           </div>
 
+          <!-- Café con Pantallas -->
           <div class="carousel-item">
             <a
               href="https://github.com/ALEXBC16/Cafe-con-Pantallas"
@@ -467,17 +544,20 @@
               <div class="card mx-auto slider-box" style="max-width: 45rem">
                 <div class="row g-0 h-100">
                   <div class="col-md-6">
-                    <img
-                      loading="lazy"
-                      src="../media/img/Logo_CafeConPantallas.png"
-                      class="img-fluid h-100"
-                      alt="Podcast project"
-                      style="object-fit: cover"
-                    />
+                    <div class="project-image-container">
+                      <img
+                        loading="lazy"
+                        src="../media/img/Logo_CafeConPantallas.png"
+                        class="img-fluid"
+                        alt="Proyecto de podcast"
+                      />
+                    </div>
                   </div>
+
                   <div class="col-md-6 d-flex align-items-center">
                     <div class="card-body text-center">
                       <h5 class="card-title">Café con Pantallas</h5>
+
                       <p class="card-text">
                         Proyecto de podcast centrado en tecnología, creación de
                         contenido y colaboración.
@@ -531,36 +611,48 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                LinkedIn Profile
+                Perfil de LinkedIn
               </a>
             </p>
           </div>
 
           <div class="col-md-6">
             <form>
-              <input
-                type="text"
-                autocomplete="name"
-                id="name"
-                class="form-control mb-2"
-                placeholder="Nombre"
-                required
-              />
-              <input
-                type="email"
-                autocomplete="email"
-                id="email"
-                class="form-control mb-2"
-                placeholder="Correo electrónico"
-                required
-              />
-              <textarea
-                autocomplete="off"
-                id="message"
-                class="form-control mb-2"
-                placeholder="Mensaje"
-                required
-              ></textarea>
+              <div class="mb-3">
+                <label for="name" class="form-label">Nombre</label>
+                <input
+                  type="text"
+                  autocomplete="name"
+                  id="name"
+                  class="form-control"
+                  placeholder="Juan Pérez"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="email" class="form-label">Correo electrónico</label>
+                <input
+                  type="email"
+                  autocomplete="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="juan@email.com"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="message" class="form-label">Mensaje</label>
+                <textarea
+                  id="message"
+                  autocomplete="off"
+                  class="form-control"
+                  placeholder="Hola Alejandro, me gustaría hablar sobre..."
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
 
               <button type="button" id="sendBtn" class="btn btn-primary">
                 Enviar
