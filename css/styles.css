@@ -110,14 +110,14 @@ h4 {
   padding: 30px;
 }
 
-/* TEXTO GENERAL */
+/* GENERAL TEXT */
 p {
   color: var(--text-color-light);
   text-align: justify;
   letter-spacing: 0.5px;
 }
 
-/* PROYECTOS (ARREGLO DEL SUBRAYADO + EFECTOS) */
+/* PROJECTS */
 #projects a {
   text-decoration: none;
   color: inherit;
@@ -142,20 +142,48 @@ p {
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
 }
 
-.card-title,
+.card-title {
+  color: var(--text-color-dark);
+  font-weight: 700;
+}
+
 .card-text {
   color: var(--text-color-dark);
+  font-size: 0.95rem;
+  line-height: 1.5;
 }
 
 .card-body {
   padding: 1.5rem;
 }
 
+/* PROJECT IMAGES */
 .slider-box {
+  height: 320px;
+  overflow: hidden;
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
   border-radius: 15px;
+}
+
+.project-image-container {
+  height: 320px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 15px 0 0 15px;
+  overflow: hidden;
+}
+
+.project-image-container img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
 }
 
 #projects a:hover .slider-box {
@@ -163,18 +191,18 @@ p {
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
 }
 
-/* CAROUSEL */
-.carousel-inner img {
-  border-radius: 15px;
+#projects a:hover .project-image-container img {
+  transform: scale(1.05);
 }
 
+/* CAROUSEL */
 .carousel-item {
   background-color: #1e1e1e;
   padding: 5%;
   border-radius: 15px;
 }
 
-/* BOTÓN */
+/* BUTTONS */
 .btn-primary {
   background-color: var(--primary-color);
   border-color: var(--primary-dark);
@@ -230,4 +258,36 @@ footer .fab {
 
 footer .fab:hover {
   color: var(--primary-color);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .skill-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #skills {
+    width: 95%;
+  }
+
+  .slider-box {
+    height: auto;
+  }
+
+  .project-image-container {
+    height: 220px;
+    border-radius: 15px 15px 0 0;
+  }
+
+  .project-image-container img {
+    max-height: 180px;
+  }
+
+  .card-body {
+    text-align: center;
+  }
+
+  .texto {
+    text-align: left;
+  }
 }
