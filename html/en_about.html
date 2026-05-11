@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alejandro López Pedreira</title>
     <meta
       name="description"
-      content="Portfolio of Alejandro López Pedreira, web and multiplatform application developer."
+      content="Portfolio of Alejandro López Pedreira, web and cross-platform application developer specialized in React, Spring Boot and databases."
     />
-    <title>Alejandro López Pedreira</title>
     <link rel="icon" href="../media/img/ALP_blanco.png" type="image/x-icon" />
     <link
       rel="stylesheet"
@@ -15,7 +15,7 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
     <link rel="stylesheet" href="../css/styles.css" />
     <script type="module" src="../speed-insights.js"></script>
@@ -121,7 +121,7 @@
     <!-- About Me Section -->
     <section class="container py-5" id="about">
       <h1 class="text-center">About Me</h1>
-      <div class="d-flex justify-content-center align-items-center gap-5">
+      <div class="row align-items-center mt-3">
         <div class="col-md-8">
           <p class="texto">
             I am a highly energetic person who loves learning new things. I
@@ -133,9 +133,10 @@
         </div>
         <div class="col-md-4 text-end foto-container">
           <img
+            loading="lazy"
             class="foto-moto"
             src="../media/img/Foto_moto.jpg"
-            alt="Photo of a motorcycle"
+            alt="Photo of my motorcycle"
           />
         </div>
       </div>
@@ -143,60 +144,79 @@
 
     <!-- Education Section -->
     <section class="container py-5" id="education">
-      <h2 class="text-center mb-4">Education</h2>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="card mb-4">
-            <div class="card-body">
-              <h5 class="card-title">Multiplatform Application Development</h5>
-              <p class="card-text">CPR Liceo La Paz 2022-Present</p>
-              <p class="card-text">
-                Learning in cross-platform application development, with courses
-                and internships completed, pending final project (TFC).
-              </p>
+      <div class="section-box">
+        <h2 class="text-center mb-4">Education</h2>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h5 class="card-title">
+                  Multiplatform Application Development
+                </h5>
+
+                <p class="card-text">CPR Liceo La Paz 2022-Present</p>
+
+                <p class="card-text">
+                  Learning in cross-platform application development, with
+                  courses and internships completed, pending final project
+                  (TFC).
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card mb-4">
-            <div class="card-body">
-              <h5 class="card-title">Web Application Development</h5>
-              <p class="card-text">CPR Liceo La Paz 2024-Present</p>
-              <p class="card-text">
-                Learning in web application development, with courses completed,
-                pending internships and final project (TFC).
-              </p>
+
+          <div class="col-md-6">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h5 class="card-title">Web Application Development</h5>
+
+                <p class="card-text">CPR Liceo La Paz 2024-Present</p>
+
+                <p class="card-text">
+                  Learning in web application development, with courses
+                  completed, pending internships and final project (TFC).
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Sección Experiencia -->
-    <section class="container py-5" id="experiencia">
-      <h2 class="text-center mb-4">Professional Experience</h2>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="card mb-4">
-            <div class="card-body">
-              <h5 class="card-title">Basketball trainer</h5>
-              <p class="card-text">Club Básquet Coruña SAD</p>
-              <p class="card-text">
-                Coach for youth categories in the first steps of children in the
-                world of basketball.
-              </p>
+    <!-- Experience Section -->
+    <section class="container py-5" id="experience">
+      <div class="section-box">
+        <h2 class="text-center mb-4">Professional Experience</h2>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h5 class="card-title">Basketball Coach</h5>
+
+                <p class="card-text">Club Básquet Coruña SAD</p>
+
+                <p class="card-text">
+                  Coach for youth categories in the first steps of children in
+                  the world of basketball.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card mb-4">
-            <div class="card-body">
-              <h5 class="card-title">Bootcamp DualTic</h5>
-              <p class="card-text">Imatia, 2024</p>
-              <p class="card-text">
-                Technology bootcamp where fullstack developer skills are
-                developed.
-              </p>
+
+          <div class="col-md-6">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h5 class="card-title">Bootcamp DualTic</h5>
+
+                <p class="card-text">Imatia, 2024</p>
+
+                <p class="card-text">
+                  Technology bootcamp where fullstack developer skills are
+                  developed.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -204,215 +224,217 @@
     </section>
 
     <!-- Languages Section -->
-    <section class="container py-5" id="experiencia">
-      <h2 class="text-center mb-4">Languages</h2>
-      <div class="row">
-        <div class="col-md-3">
-          <div class="card mb-4">
-            <div class="card-body">
-              <h5 class="card-title">
-                Spanish
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="72"
-                  height="72"
-                  viewBox="0 0 72 72"
-                >
-                  <path fill="#f1b31c" d="M5 17h62v38H5z" />
-                  <path
-                    fill="#d22f27"
-                    d="M23 33v7a2.006 2.006 0 0 1-2 2h-4a2.006 2.006 0 0 1-2-2v-7M5 17h62v9H5zm0 29h62v9H5z"
-                  />
-                  <path fill="#f1b31c" d="M19 33h4v4h-4z" />
-                  <circle cx="19" cy="37" r="1.5" fill="#6a462f" />
-                  <path
-                    fill="none"
-                    stroke="#6a462f"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M27 33v9m-16-9v9m4-12a8.6 8.6 0 0 1 4-1m4 1a8.6 8.6 0 0 0-4-1m-4 4h8m0 0v7a2.006 2.006 0 0 1-2 2h-4a2.006 2.006 0 0 1-2-2v-7m-5 9h2m14 0h2"
-                  />
-                  <path
-                    fill="none"
-                    stroke="#000"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 17h62v38H5z"
-                  />
-                </svg>
-              </h5>
-              <p class="card-text">Mother Tongue</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card mb-4">
-            <div class="card-body">
-              <h5 class="card-title">
-                Galician
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="72"
-                  height="72"
-                  viewBox="0 0 72 72"
-                >
-                  <path fill="#fff" d="M5 17h62v38H5z" />
-                  <path
-                    fill="#61b2e4"
-                    d="M10.3 17.03c-5.301-.033-5.301-.033-5.432 3.904l56.9 34.13c5.235-.065 5.235-.065 5.202-4.018z"
-                  />
-                  <g stroke-linecap="round">
+    <section class="container py-5" id="languages">
+      <div class="section-box">
+        <h2 class="text-center mb-4">Languages</h2>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h5 class="card-title">
+                  Spanish
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="72"
+                    height="72"
+                    viewBox="0 0 72 72"
+                  >
+                    <path fill="#f1b31c" d="M5 17h62v38H5z" />
                     <path
-                      fill="#1e50a0"
-                      stroke="#1e50a0"
+                      fill="#d22f27"
+                      d="M23 33v7a2.006 2.006 0 0 1-2 2h-4a2.006 2.006 0 0 1-2-2v-7M5 17h62v9H5zm0 29h62v9H5z"
+                    />
+                    <path fill="#f1b31c" d="M19 33h4v4h-4z" />
+                    <circle cx="19" cy="37" r="1.5" fill="#6a462f" />
+                    <path
+                      fill="none"
+                      stroke="#6a462f"
+                      stroke-linecap="round"
                       stroke-linejoin="round"
                       stroke-width="2"
-                      d="M31.595 34.055h8.784c0 10.31-2.035 10.34-4.416 10.34c-2.431 0-4.368.094-4.368-10.34"
+                      d="M27 33v9m-16-9v9m4-12a8.6 8.6 0 0 1 4-1m4 1a8.6 8.6 0 0 0-4-1m-4 4h8m0 0v7a2.006 2.006 0 0 1-2 2h-4a2.006 2.006 0 0 1-2-2v-7m-5 9h2m14 0h2"
                     />
                     <path
                       fill="none"
-                      stroke="#f1b31c"
+                      stroke="#000"
+                      stroke-linecap="round"
                       stroke-linejoin="round"
-                      stroke-width="1.792"
-                      d="M35.985 40.185v3.843"
-                    />
-                    <path
-                      fill="none"
-                      stroke="#fff"
                       stroke-width="2"
-                      d="M35.985 37.345v.626"
+                      d="M5 17h62v38H5z"
                     />
-                    <path
-                      fill="none"
-                      stroke="#d0cfce"
-                      stroke-linejoin="round"
-                      d="M32.075 40.885c-.484-6.834-.484-6.984 4.154-6.905c4.146.07 4.146.07 3.657 6.928"
-                      stroke-width="1"
-                    />
-                    <path
-                      fill="none"
-                      stroke="#ea5a47"
-                      stroke-linejoin="round"
-                      stroke-width="3"
-                      d="M31.485 31.005c3.306-.871 5.541-.936 8.997-.032"
-                    />
-                    <path
-                      fill="none"
-                      stroke="#f1b31c"
-                      stroke-linejoin="round"
-                      d="M30.925 32.425c3.306-.871 6.684-.904 10.14 0"
-                      stroke-width="1"
-                    />
-                    <path
-                      fill="none"
-                      stroke="#f1b31c"
-                      stroke-width="2"
-                      d="m35.965 27.605l.03 3.714m-6.46-2.304l1.396 2.911m11.534-2.911l-1.396 2.911"
-                    />
-                  </g>
-                  <path
-                    fill="none"
-                    stroke="#000"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 17h62v38H5z"
-                  />
-                </svg>
-              </h5>
-              <p class="card-text">Mother Tongue</p>
+                  </svg>
+                </h5>
+                <p class="card-text">Mother Tongue</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card mb-4">
-            <div class="card-body">
-              <h5 class="card-title">
-                English
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="72"
-                  height="72"
-                  viewBox="0 0 72 72"
-                >
-                  <path fill="#1e50a0" d="M5 17h62v38H5z" />
-                  <path
-                    fill="#fff"
-                    d="M40 28.856V32h10.181L67 21.691V17h-7.654z"
-                  />
-                  <path
-                    fill="#d22f27"
-                    d="M67 17h-3.827L40 31.203V32h3.482L67 17.586z"
-                  />
-                  <path
-                    fill="#fff"
-                    d="M59.347 55H67v-4.692L50.182 40H40v3.143z"
-                  />
-                  <path
-                    fill="#d22f27"
-                    d="M67 55v-2.347L46.355 40h-4.787l24.474 15z"
-                  />
-                  <path
-                    fill="#fff"
-                    d="M32 43.144V40H21.819L5 50.309V55h7.654z"
-                  />
-                  <path
-                    fill="#d22f27"
-                    d="M5 55h3.827L32 40.797V40h-3.482L5 54.414z"
-                  />
-                  <path
-                    fill="#fff"
-                    d="M12.653 17H5v4.692L21.818 32H32v-3.143z"
-                  />
-                  <path
-                    fill="#d22f27"
-                    d="M5 17v2.347L25.646 32h4.786L5.958 17z"
-                  />
-                  <path fill="#fff" d="M5 31h62v10H5z" />
-                  <path fill="#fff" d="M31 17h10v38H31z" />
-                  <path fill="#d22f27" d="M5 33h62v6H5z" />
-                  <path fill="#d22f27" d="M33 17h6v38h-6z" />
-                  <path
-                    fill="none"
-                    stroke="#000"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 17h62v38H5z"
-                  />
-                </svg>
-              </h5>
-              <p class="card-text">C1 Certificate</p>
+          <div class="col-md-3">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h5 class="card-title">
+                  Galician
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="72"
+                    height="72"
+                    viewBox="0 0 72 72"
+                  >
+                    <path fill="#fff" d="M5 17h62v38H5z" />
+                    <path
+                      fill="#61b2e4"
+                      d="M10.3 17.03c-5.301-.033-5.301-.033-5.432 3.904l56.9 34.13c5.235-.065 5.235-.065 5.202-4.018z"
+                    />
+                    <g stroke-linecap="round">
+                      <path
+                        fill="#1e50a0"
+                        stroke="#1e50a0"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M31.595 34.055h8.784c0 10.31-2.035 10.34-4.416 10.34c-2.431 0-4.368.094-4.368-10.34"
+                      />
+                      <path
+                        fill="none"
+                        stroke="#f1b31c"
+                        stroke-linejoin="round"
+                        stroke-width="1.792"
+                        d="M35.985 40.185v3.843"
+                      />
+                      <path
+                        fill="none"
+                        stroke="#fff"
+                        stroke-width="2"
+                        d="M35.985 37.345v.626"
+                      />
+                      <path
+                        fill="none"
+                        stroke="#d0cfce"
+                        stroke-linejoin="round"
+                        d="M32.075 40.885c-.484-6.834-.484-6.984 4.154-6.905c4.146.07 4.146.07 3.657 6.928"
+                        stroke-width="1"
+                      />
+                      <path
+                        fill="none"
+                        stroke="#ea5a47"
+                        stroke-linejoin="round"
+                        stroke-width="3"
+                        d="M31.485 31.005c3.306-.871 5.541-.936 8.997-.032"
+                      />
+                      <path
+                        fill="none"
+                        stroke="#f1b31c"
+                        stroke-linejoin="round"
+                        d="M30.925 32.425c3.306-.871 6.684-.904 10.14 0"
+                        stroke-width="1"
+                      />
+                      <path
+                        fill="none"
+                        stroke="#f1b31c"
+                        stroke-width="2"
+                        d="m35.965 27.605l.03 3.714m-6.46-2.304l1.396 2.911m11.534-2.911l-1.396 2.911"
+                      />
+                    </g>
+                    <path
+                      fill="none"
+                      stroke="#000"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 17h62v38H5z"
+                    />
+                  </svg>
+                </h5>
+                <p class="card-text">Mother Tongue</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card mb-4">
-            <div class="card-body">
-              <h5 class="card-title">
-                Italian
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="72"
-                  height="72"
-                  viewBox="0 0 72 72"
-                >
-                  <path fill="#fff" d="M5 17h62v38H5z" />
-                  <path fill="#5c9e31" d="M5 17h21v38H5z" />
-                  <path fill="#d22f27" d="M46 17h21v38H46z" />
-                  <path
-                    fill="none"
-                    stroke="#000"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 17h62v38H5z"
-                  />
-                </svg>
-              </h5>
-              <p class="card-text">Initiation</p>
+          <div class="col-md-3">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h5 class="card-title">
+                  English
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="72"
+                    height="72"
+                    viewBox="0 0 72 72"
+                  >
+                    <path fill="#1e50a0" d="M5 17h62v38H5z" />
+                    <path
+                      fill="#fff"
+                      d="M40 28.856V32h10.181L67 21.691V17h-7.654z"
+                    />
+                    <path
+                      fill="#d22f27"
+                      d="M67 17h-3.827L40 31.203V32h3.482L67 17.586z"
+                    />
+                    <path
+                      fill="#fff"
+                      d="M59.347 55H67v-4.692L50.182 40H40v3.143z"
+                    />
+                    <path
+                      fill="#d22f27"
+                      d="M67 55v-2.347L46.355 40h-4.787l24.474 15z"
+                    />
+                    <path
+                      fill="#fff"
+                      d="M32 43.144V40H21.819L5 50.309V55h7.654z"
+                    />
+                    <path
+                      fill="#d22f27"
+                      d="M5 55h3.827L32 40.797V40h-3.482L5 54.414z"
+                    />
+                    <path
+                      fill="#fff"
+                      d="M12.653 17H5v4.692L21.818 32H32v-3.143z"
+                    />
+                    <path
+                      fill="#d22f27"
+                      d="M5 17v2.347L25.646 32h4.786L5.958 17z"
+                    />
+                    <path fill="#fff" d="M5 31h62v10H5z" />
+                    <path fill="#fff" d="M31 17h10v38H31z" />
+                    <path fill="#d22f27" d="M5 33h62v6H5z" />
+                    <path fill="#d22f27" d="M33 17h6v38h-6z" />
+                    <path
+                      fill="none"
+                      stroke="#000"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 17h62v38H5z"
+                    />
+                  </svg>
+                </h5>
+                <p class="card-text">C1 Certificate</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h5 class="card-title">
+                  Italian
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="72"
+                    height="72"
+                    viewBox="0 0 72 72"
+                  >
+                    <path fill="#fff" d="M5 17h62v38H5z" />
+                    <path fill="#5c9e31" d="M5 17h21v38H5z" />
+                    <path fill="#d22f27" d="M46 17h21v38H46z" />
+                    <path
+                      fill="none"
+                      stroke="#000"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 17h62v38H5z"
+                    />
+                  </svg>
+                </h5>
+                <p class="card-text">Initiation</p>
+              </div>
             </div>
           </div>
         </div>
@@ -451,48 +473,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- JS -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        document
-          .getElementById("sendBtn")
-          .addEventListener("click", async function () {
-            const name = document.getElementById("name").value;
-            const email = document.getElementById("email").value;
-            const message = document.getElementById("message").value;
-
-            if (!name || !email || !message) {
-              alert("Please fill all fields");
-              return;
-            }
-
-            try {
-              const response = await fetch("/api/send-email", {
-                method: "POST",
-                headers: {
-                  "Content-Type": "application/json",
-                },
-                body: JSON.stringify({
-                  name,
-                  email,
-                  message,
-                }),
-              });
-
-              if (response.ok) {
-                alert("Message sent successfully!");
-
-                document.getElementById("name").value = "";
-                document.getElementById("email").value = "";
-                document.getElementById("message").value = "";
-              } else {
-                alert("Error sending message");
-              }
-            } catch (error) {
-              alert("Server error");
-            }
-          });
-      });
-    </script>
     <script>
       const startYear = 2025;
       const currentYear = new Date().getFullYear();

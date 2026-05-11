@@ -1,187 +1,233 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 :root {
-    --primary-color: #00aaff;
-    --primary-dark: #0088cc;
-    --background-color: #121212;
-    --text-color-light: #e0e0e0;
-    --text-color-dark: #333;
-    --navbar-bg: #1e1e1e;
+  --primary-color: #00aaff;
+  --primary-dark: #0088cc;
+  --background-color: #121212;
+  --text-color-light: #e0e0e0;
+  --text-color-dark: #333;
+  --navbar-bg: #1e1e1e;
 }
 
 body {
-    background-color: var(--background-color);
-    color: var(--text-color-light);
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color-light);
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
 
-h1, h2, h3, h4 {
-    font-family: 'Roboto', sans-serif;
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Roboto", sans-serif;
 }
 
 /* NAVBAR */
 .navbar {
-    background-color: var(--navbar-bg);
+  background-color: var(--navbar-bg);
 }
 
 .navbar-brand img {
-    height: 100px;
+  height: 60px;
 }
 
-.navbar-brand, .nav-link {
-    color: var(--text-color-light) !important;
+.navbar-brand,
+.nav-link {
+  color: var(--text-color-light) !important;
 }
 
 .navbar-nav .nav-link {
-    padding: 10px 15px;
+  padding: 10px 15px;
 }
 
 .navbar-nav .nav-link:hover {
-    color: var(--text-color-light) !important;
-    background-color: var(--primary-dark) !important;
-    text-shadow: 0 0 5px var(--text-color-light);
+  color: var(--text-color-light) !important;
+  background-color: var(--primary-dark) !important;
+  text-shadow: 0 0 5px var(--text-color-light);
 }
 
 /* ABOUT */
 .Quiensoy {
-    padding-top: 25px;
+  padding-top: 25px;
 }
 
 .texto {
-    font-size: large;
-    text-align: justify;
+  font-size: large;
+  text-align: justify;
+  max-width: 700px;
+  line-height: 1.8;
 }
 
 .foto-perfil {
-    height: 75%;
-    width: 75%;
-    object-fit: cover;
-    border-radius: 50%;
+  height: 75%;
+  width: 75%;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 .foto-moto {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 15px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+  transition: transform 0.3s ease;
+}
+
+.foto-moto:hover {
+  transform: scale(1.02);
 }
 
 /* SKILLS */
 .skill {
-    width: max-content;
-    margin: 0 auto;
+  width: max-content;
+  margin: 0 auto;
 }
 
 .skill-row {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 #skills {
-    background-color: #1e1e1e;
-    border-radius: 10px;
-    width: 70%;
-    justify-self: center;
-    margin-top: 75px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  width: 70%;
+  justify-self: center;
+  margin-top: 75px;
+}
+
+.section-box {
+  background-color: #1e1e1e;
+  border-radius: 16px;
+  padding: 30px;
 }
 
 /* TEXTO GENERAL */
 p {
-    color: var(--text-color-light);
-    text-align: justify;
-    letter-spacing: 0.5px;
+  color: var(--text-color-light);
+  text-align: justify;
+  letter-spacing: 0.5px;
 }
 
 /* PROYECTOS (ARREGLO DEL SUBRAYADO + EFECTOS) */
 #projects a {
-    text-decoration: none;
-    color: inherit;
-    display: block;
+  text-decoration: none;
+  color: inherit;
+  display: block;
 }
 
-.card-title, .card-text {
-    color: var(--text-color-dark);
+#languages .card-body {
+  padding: 1rem;
 }
 
-/* EFECTO HOVER PRO */
+.card {
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+}
+
+.card-title,
+.card-text {
+  color: var(--text-color-dark);
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
 .slider-box {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-radius: 15px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  border-radius: 15px;
 }
 
 #projects a:hover .slider-box {
-    transform: scale(1.03);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+  transform: scale(1.03);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
 }
 
 /* CAROUSEL */
 .carousel-inner img {
-    border-radius: 15px;
+  border-radius: 15px;
 }
 
 .carousel-item {
-    background-color: #1e1e1e;
-    padding: 5%;
-    border-radius: 15px;
+  background-color: #1e1e1e;
+  padding: 5%;
+  border-radius: 15px;
 }
 
 /* BOTÓN */
-#btn-primary {
-    background-color: var(--primary-color);
-    border-color: var(--primary-dark);
-    transition: background-color 0.3s, border-color 0.3s;
-    border-radius: 5px;
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-dark);
+  transition:
+    background-color 0.3s,
+    border-color 0.3s;
+  border-radius: 5px;
 }
 
-#btn-primary:hover {
-    background-color: var(--primary-dark);
-    border-color: #006699;
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+  border-color: #006699;
 }
 
 /* CONTACT */
 #contact {
-    padding: 5%;
-    border-radius: 15px;
-    margin: 15px;
+  padding: 5%;
+  border-radius: 15px;
+  margin: 15px;
 }
 
 /* FOOTER */
 footer {
-    background-color: var(--navbar-bg);
-    padding: 50px;
-    text-align: center;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  background-color: var(--navbar-bg);
+  padding: 50px;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+  border-top: 1px solid #2a2a2a;
 }
 
 footer div {
-    display: flex;
-    gap: 15px;
-    margin-bottom: 10px;
-    justify-content: center;
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+  justify-content: center;
 }
 
 footer p {
-    margin: 0;
-    text-align: center;
-    width: 100%;
+  margin: 0;
+  text-align: center;
+  width: 100%;
 }
 
 footer .fab {
-    color: var(--text-color-light);
-    transition: color 0.3s ease-in-out;
+  color: var(--text-color-light);
+  transition: color 0.3s ease-in-out;
 }
 
 footer .fab:hover {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
